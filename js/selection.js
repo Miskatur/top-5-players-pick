@@ -6,9 +6,6 @@ function playerNameDisplay(playerNameArray) {
 
     for (let i = 0; i < playerNameArray.length; i++) {
 
-
-        // playerNameArray.length.pop();
-
         const playerName = playerNameArray[i].playerName;
         const playerList = document.createElement('li');
         playerList.innerText = playerName;
@@ -18,8 +15,7 @@ function playerNameDisplay(playerNameArray) {
 }
 
 function addToUl(element) {
-    // console.log(element.parentNode.parentNode.children);
-    // console.log(element.parentNode.parentNode.children[0].innerText);
+
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerNameObject = {
         playerName: playerName
@@ -33,8 +29,5 @@ function addToUl(element) {
         document.getElementById('selected-players').innerText = playerNameArray.length;
         playerNameDisplay(playerNameArray)
     }
-
-
-
 
 }

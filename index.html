@@ -87,15 +87,11 @@
                 </div>
             </div>
             <!-- select your five  -->
-            <div class="col bg-dark">
+            <div class="col bg-dark rounded">
                 <h4 class="text-info text-center py-3">Selected <span id="selected-players">0</span></h4>
 
                 <ol id="playersNameOrderList" class="text-light">
-                    <!-- <li class="py-2"> Player 1</li>
-                    <li class="py-2"> Player 2</li>
-                    <li class="py-2"> Player 3</li>
-                    <li class="py-2"> Player 4</li>
-                    <li class="py-2"> player 5</li> -->
+
                 </ol>
             </div>
 
@@ -156,7 +152,7 @@
                 </div>
             </div>
             <!-- budget  -->
-            <div class="col bg-dark pb-3">
+            <div class="col bg-dark pb-3 rounded">
                 <h4 class="text-info text-center py-3">Budget</h4>
                 <div>
                     <div class="d-flex">
@@ -164,20 +160,26 @@
                             <p class="text-white fs-6 fw-lighter">Per Player :</p>
                         </div>
                         <div class="w-100">
-                            <input class="w-75" type="text" name="" id="per-player-field">
+                            <input class="w-100" type="text" name="" id="per-player-field">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
-                        <button id="btn-calculate" class="btn btn-primary px-5 py-1">Calculate</button>
+                        <button id="btn-calculate" class="btn btn-primary px-5 py-1"> Calculate </button>
                     </div>
-                    <p class="text-white pt-2 fs-6 fst-normal">Player expenses : $<span id="player-expenses">00</span>
-                    </p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="text-white pt-2 fs-6 fst-normal">Player Expenses :</p>
+                        </div>
+                        <div>
+                            <p class="text-light pt-2">$<span id="player-expenses">00</span></p>
+                        </div>
+                    </div>
                     <div class="d-flex pt-2">
                         <div class="w-100">
                             <p class="text-white fs-6 fw-lighter">Manager :</p>
                         </div>
                         <div class="w-100">
-                            <input class="w-75" type="text" name="" id="manager-field">
+                            <input class="w-100" type="text" name="" id="manager-field">
                         </div>
                     </div>
                     <div class="d-flex pt-2">
@@ -185,7 +187,7 @@
                             <p class="text-white fs-6 fw-lighter">Coach :</p>
                         </div>
                         <div class="w-100">
-                            <input class="w-75" type="text" name="" id="coach-field">
+                            <input class="w-100" type="text" name="" id="coach-field">
                         </div>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
