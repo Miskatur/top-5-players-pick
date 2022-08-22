@@ -26,7 +26,7 @@ function addToUl(element) {
     }
     playerNameArray.push(playerNameObject)
     if (playerNameArray.length > 5) {
-        alert("You can't select more than 5 player")
+        alert("You can't select more than 5 players!")
         return
     }
     else {
