@@ -14,9 +14,6 @@ function playerNameDisplay(playerNameArray) {
         playerList.innerText = playerName;
         playersNameOrderList.appendChild(playerList);
 
-
-
-
     }
 }
 
