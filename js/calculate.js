@@ -17,12 +17,12 @@ function setTextElementById(elementId, value) {
     newTextElement.innerText = value;
 }
 
-
 document.getElementById('btn-calculate').addEventListener('click', function () {
     const perPlayerField = getInputFieldElementById('per-player-field')
-    const totalPlayerCost = perPlayerField * playerNameArray.length;
 
+    const totalPlayerCost = perPlayerField * playerNameArray.length;
     setTextElementById('player-expenses', totalPlayerCost)
+
 })
 
 document.getElementById('btn-total').addEventListener('click', function () {
