@@ -15,7 +15,6 @@ function playerNameDisplay(playerNameArray) {
 }
 
 function addToUl(element) {
-
     const playerName = element.parentNode.parentNode.children[0].innerText;
     const playerNameObject = {
         playerName: playerName
@@ -23,7 +22,8 @@ function addToUl(element) {
     playerNameArray.push(playerNameObject)
     if (playerNameArray.length > 5) {
         alert("You can't select more than 5 players!")
-        return
+        playerNameArray.pop();
+        return;
     }
     else {
         document.getElementById('selected-players').innerText = playerNameArray.length;
